@@ -1,0 +1,92 @@
+
+https://trello.com/b/6We9PMvb/samal
+https://www.figma.com/file/QJSZ9BgYLw3eSlyxbXzbb9/Samal-Marketplace?node-id=46%3A6
+
+npm install -g @vue/cli @vue/cli-service-global @vue/cli-service
+
+npm install vue-resource
+npm install vue-axios
+npm install @babel/preset-env -D
+npm install sass sass-loader deepmerge -D
+npm install roboto-fontface --save
+
+npm install -g firebase-tools
+firebase login
+firebase use --add
+firebase serve -p 8081
+
+npm install firebase --save
+
+vue create admin
+
+vue add i18n
+vue add vuetify
+firebase init
+
+yarn serve
+vue serve
+
+
+
+# PWA
+vue add pwa
+
+yarn build
+npm run build
+
+npm i -g serve
+serve dist
+
+chrome://apps/
+
+# PWA Mobile App Cordova
+npm install -g cordova
+vue add cordova
+
+cordova create HelloWorld com.example.hello "Hello World"
+cd HelloWorld
+
+cordova platform add android
+cordova platform add ios
+cordova platform add wp7
+cordova platform add wp8
+cordova platform add blackberry
+
+cordova platform rm android
+cordova platform rm ios
+cordova platform rm blackberry
+
+cordova build
+
+cordova build android
+
+cordova build ios
+cordova prepare ios
+cordova compile ios
+
+cordova emulate android
+
+yarn cordova-serve-android # Development Android
+yarn cordova-build-android # Build Android
+yarn cordova-serve-ios # Development IOS
+yarn cordova-build-ios # Build IOS
+yarn cordova-serve-browser # Development Browser
+yarn cordova-build-browser # Build Browser
+
+# PWA Mobile App Capacitor
+npm install --save @capacitor/core @capacitor/cli
+npx cap init
+npx cap init vuecapacitordemo com.example.vuecapacitordemo
+npm run build
+npx cap add android
+npx cap add ios
+
+
+
+
+VUE_APP_ROOT_API
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">

@@ -1,0 +1,944 @@
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url("../../public/fonts/PTSansCaption/PTSans-Caption.eot");
+    src: local('PT Sans Caption'), local('PTSans-Caption'),
+    url('../../public/fonts/PTSansCaption/PTSans-Caption.eot?#iefix') format('embedded-opentype'),
+    url('../../public/fonts/PTSansCaption/PTSans-Caption.woff2') format('woff2'),
+    url('../../public/fonts/PTSansCaption/PTSans-Caption.woff') format('woff'),
+    url('../../public/fonts/PTSansCaption/PTSans-Caption.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../../public/fonts/PTSansCaption/PTSans-CaptionBold.eot');
+    src: local('PT Sans Caption Bold'), local('PTSans-CaptionBold'),
+    url('../../public/fonts/PTSansCaption/PTSans-CaptionBold.eot?#iefix') format('embedded-opentype'),
+    url('../../public/fonts/PTSansCaption/PTSans-CaptionBold.woff2') format('woff2'),
+    url('../../public/fonts/PTSansCaption/PTSans-CaptionBold.woff') format('woff'),
+    url('../../public/fonts/PTSansCaption/PTSans-CaptionBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body, .v-application, .v-application, .my-font-family{
+    font-family: "PT Sans Caption", system, -apple-system, BlinkMacSystemFont,
+    '.SFNSDisplay-Regular', 'Helvetica Neue', 'Lucida Grande', 'Arial',
+    sans-serif !important;
+}
+html{
+    position: relative;
+}
+body{
+    background: url('../../public/img/pattern.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.theme--light.v-application, .theme--light.v-navigation-drawer, .theme--light.v-data-table{
+    background-color: transparent !important;
+}
+.background_color_transparent{
+    background-color: transparent !important;
+}
+
+.manager_ellipse{
+    background: url("../../public/img/manager_ellipse.svg") no-repeat;
+    background-position: left !important;
+}
+.tracking_container{
+    background: url("../../public/img/container.svg") no-repeat left top 3px;
+}
+
+.max_width{
+    position: relative !important;
+    max-width: 1264px !important;
+}
+
+.doc1{
+    background: url("../../public/img/doc1.svg") no-repeat;
+    background-position: right !important;
+
+}
+.doc2{
+    background: url("../../public/img/doc2.svg") no-repeat;
+    background-position: right !important;
+    background-size: 15px 20px !important;
+}
+.doc3{
+    background: url("../../public/img/doc3.svg") no-repeat;
+    background-position: right !important;
+    background-size: 10px 10px !important;
+}
+
+
+.height_list_item{
+    height: 100px;
+}
+.topic_background {
+    border-left: solid 12px #33CC33;
+    background-color: #F5F5F5;
+}
+.topic_background_bot{
+    border-left: solid 12px #007EC9;
+    background-color: #CDDAE1;
+}
+.topic_background_close{
+    border: solid 1px #F0F0F0;
+    border-left: solid 12px #F0F0F0;
+    background-color: #FFFFFF !important;
+}
+.topic_title{
+    font-size: 14px !important;
+    font-weight: 700;
+    line-height: 18px !important;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #333333 !important;
+    padding-bottom: 3px;
+}
+.topic_text{
+    color: #B3B3B3 !important;
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: 14px !important;
+    letter-spacing: 0 !important;
+    text-align: left;
+    padding-bottom: 3px;
+}
+.topic_text_bot{
+    color: #333333 !important;
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: 14px !important;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+
+
+.color_999999{
+    color: #999999 !important;
+}
+.color_333333{
+    color: #333333 !important;
+}
+.color_B3B3B3{
+    color: #B3B3B3 !important;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+.icon_width{
+    width: 17px !important;
+}
+
+.border1{
+    border: solid 1px #007EC9 !important;
+}
+.border1_B3B3B3{
+    border: solid 1px #B3B3B3 !important;
+}
+
+.align-center{
+    text-align: center;
+}
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+
+@keyframes menu {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateX(0);}
+}
+
+.text_transform{
+    transform: translateX(-150%);
+}
+.text_transform2 {
+    animation: menu 0.5s forwards;
+}
+
+
+
+
+.font-primary{
+    color: #007EC9 !important;
+}
+.font-size-11{
+  font-size: 11px !important;
+}
+.font-size-12{
+  font-size: 12px !important;
+}
+.font-size-14{
+  font-size: 14px !important;
+}
+.font-size-16{
+  font-size: 16px !important;
+}
+
+.font-weight-400{
+   font-weight: 400 !important;
+}
+.font-weight-500{
+    font-weight: 500 !important;
+}
+.font-weight-600{
+    font-weight: 600 !important;
+}
+.font-weight-700{
+    font-weight: 700 !important;
+}
+
+.width_100{
+    width: 100% !important;
+}
+
+.title_header{
+    color: #007EC9;
+    font-size: 20px !important;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0;
+    text-align: left;
+
+}
+.rowNotification{
+    height: 82px;
+    background-color: #F5F5F5;
+}
+
+.rowCompany{
+    height: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #B3B3B3 !important;
+}
+.rowCompany td{
+  margin: 10px 0 10px 0 !important;
+  padding: 10px 0 10px 0 !important;
+}
+
+.rowCompany:hover {
+    background: inherit !important;
+}
+
+.rowClass{
+    height: 63px;
+    background-color: #F5F5F5;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+
+}
+.rowClass td{
+    margin: 0 !important;
+    width: 20%;
+    display: inline-block;
+    border-bottom: 0 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 18px !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    color: #333333 !important;
+}
+
+.rowClass td .title{
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    line-height: 14px!important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    color: #B3B3B3 !important;
+    margin: 14px 0 3px 0 !important;
+    font-family: "PT Sans Caption", system, -apple-system, 'Arial', sans-serif !important;
+
+}
+
+.rowClass td .text{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #333333;
+}
+
+.table_header{
+    border-bottom: 0 !important;
+    height: 10px !important;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #B3B3B3 !important;
+
+}
+
+.tableDealOrder table
+{
+    border-collapse: separate;
+    border-spacing: 0 15px !important;
+}
+
+.tableDealOrder table thead tr th:nth-last-child(1){
+    text-align: right !important;
+}
+
+.rowDealOrder{
+    height: 63px;
+    background-color: #F5F5F5;
+    width: 100%;
+
+}
+.rowDealOrder td{
+    margin: 0 !important;
+    width: 20%;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 18px !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    color: #333333 !important;
+    height: 63px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border: 1px solid #B3B3B3;
+    transition: all ease 0.3s;
+    border-bottom: 1px solid #B3B3B3 !important;
+    border-left: 0 ;
+    border-right: 0 ;
+
+}
+
+.rowDealOrder td:first-child {
+    border-right: 0 !important;
+    border-left: solid 1px #B3B3B3 !important;
+    border-color: #B3B3B3 !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.rowDealOrder td:last-child {
+    border-right: 1px solid #B3B3B3 !important;
+    border-left: 0 !important;
+    border-color: #B3B3B3 !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+
+.text_14{
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 18px !important;
+    letter-spacing: 0 !important;
+}
+
+.text_11{
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: 14px !important;
+    letter-spacing: 0 !important;
+}
+
+.text_hello{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #007EC9;
+}
+.title_login{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #C6C6C6;
+
+
+}
+.tumbler{
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+}
+.tumbler a{
+    text-decoration: none;
+}
+.register_div{
+    position: fixed;
+    bottom: 50px;
+    width: auto;
+}
+.but_enter{
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 18px !important;
+    letter-spacing: 0.03em;
+    text-align: center;
+    height: 35px !important;
+    width: 139px !important;
+}
+.input_text{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    min-height: 35px !important;
+
+}
+.input_text input{
+    box-shadow: none !important;
+}
+.title_login br{
+    display: contents;
+}
+
+.logo_login{
+    position: absolute;
+    bottom: 32px;
+    left: 46px
+}
+
+.input_label{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    display: block;
+    color: #B3B3B3;
+    margin-bottom: 4px;
+}
+
+
+.sidebar_size{
+    width: 180px !important;
+}
+.menu_list_item{
+    min-height: 42px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+.menu-text{
+    font-size: 11px !important;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0;
+}
+.user_language{
+    text-align: right;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    color: #999999;
+
+}
+
+.rowCompany td div.col_name, .rowCompany td div.col_category_copy{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #333333 !important;
+
+}
+.rowCompany td div.company_table_header{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #B3B3B3;
+}
+.tableCompanyBorder{
+    border: solid 1px #DEDEDE;
+    padding: 10px 20px;
+}
+
+.notification_title{
+    font-size: 14px !important;
+    font-weight: 700;
+    line-height: 21px !important;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #333333 !important;
+}
+.notification_text{
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: 20px !important;
+    letter-spacing: 0;
+    text-align: left;
+    color: #B3B3B3 !important;
+}
+
+.profile_background{
+    background-color: #F5F5F5;
+    padding: 48px 50px 48px 50px !important;
+    margin-top: 20px !important;
+}
+.profile_background_color{
+    background-color: #F5F5F5;
+}
+
+.profile_text_add{
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 18px !important;
+    letter-spacing: 0;
+    text-align: left;
+    color: #000000;
+    padding-left: 10px !important;
+
+}
+
+.profile_text{
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: 20px !important;
+    letter-spacing: 0;
+    text-align: left;
+    color: #B3B3B3 !important;
+}
+
+.profile_title_add{
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 18px !important;
+    letter-spacing: 0;
+    text-align: left;
+    color: #000000;
+}
+
+.deal_title{
+    font-size: 11px !important;
+    font-weight: 700;
+    line-height: 18px !important;
+    letter-spacing: 0;
+    color: #333333 !important;
+}
+
+.deal_text{
+    font-size: 11px !important;
+    font-weight: 400;
+    line-height: 14px !important;
+    letter-spacing: 0;
+    color: #B3B3B3 !important;
+}
+
+.deal_title_section{
+    font-size: 14px !important;
+    font-weight: 700;
+    line-height: 18px !important;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #007EC9;
+}
+
+
+.deal_text_order_tab{
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 18px !important;
+    letter-spacing: 0 !important;
+    text-align: left;
+    display: block;
+    vertical-align: middle;
+}
+
+.deal_in_detail{
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #333333 !important;
+    padding: 0 15px 0 0 !important;
+
+
+}
+.deal_in_detail b{
+    font-weight: 700;
+}
+
+.close{
+    position: absolute;
+    right: 13px;
+    top: 15px;
+}
+.info_open{
+    position: absolute;
+    background-color: #ffffff !important;
+    z-index: 1;
+    width: 600px;
+    right: -70px;
+    top: -50px;
+}
+.deal_dialog_padding{
+    padding: 20px 24px 20px 24px !important;
+}
+
+@media (max-width: 960px) {
+    .icon_width{
+        width: 24px !important;
+    }
+    .theme--light.v-navigation-drawer{
+        background-color: #FFFFFF !important;
+    }
+    .sidebar_size{
+        width: 50% !important;
+    }
+    .tab_menu_name{
+        font-size: 16px !important;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #007EC9 !important;
+    }
+    .menu_list_item{
+        margin-left: 22px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+
+    }
+    .menu-text{
+        font-size: 16px !important;
+        line-height: 21px;
+    }
+    .register_div{
+        position: unset;
+        width: 100%;
+        text-align: center;
+    }
+    .user_language{
+        text-align: left;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-left: 47px;
+        padding-bottom: 47px;
+    }
+    .tab_close{
+        position: absolute !important;
+        right: 20px;
+        top: 14px;
+        min-width: 40px;
+        min-height: 40px;
+        z-index: 100 !important;
+    }
+    .title_header{
+        font-size: 24px !important;
+        line-height: 31px;
+    }
+
+    .tracking_title_mobi{
+        font-size: 14px !important;
+        font-weight: 400;
+        line-height: 18px !important;
+        letter-spacing: 0;
+        text-align: left !important;
+        color: #B3B3B3 !important;
+        max-width: 40% !important;
+    }
+    .tracking_text_mobi, .tracking_name, .tracking_container{
+        font-size: 16px !important;
+        font-weight: 700;
+        line-height: 21px !important;
+        letter-spacing: 0;
+        text-align: left;
+        color: #333333 !important;
+        max-width: 100% !important;
+        flex-basis: 60% !important;
+    }
+
+    .tracking_name{
+        padding-left: 25px !important;
+    }
+
+    .tracking_container{
+        padding-left: 35px !important;
+        padding-bottom: 5px !important;
+        background-position-y: 5px !important;
+    }
+
+    .tracking_chat_icon{
+        position: absolute;
+        right: 10px;
+        top: 0;
+        max-width: unset !important;
+        width: auto !important;
+    }
+
+    .tracking_rov_mobi{
+        position: relative;
+    }
+
+}
+
+
+@media (max-width: 599px) {
+
+    .input_text{
+        width: 100%;
+        min-height: auto !important;
+    }
+    .text_hello{
+        font-size: 24px;
+        line-height: 31px;
+
+    }
+    .title_login{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .title_login br{
+        display: unset;
+    }
+    .but_enter{
+        line-height: 21px !important;
+        height: 45px !important;
+        width: 100% !important;
+        font-size: 14px !important;
+    }
+    .logo_login{
+        position: absolute;
+        bottom: unset;
+        left: unset;
+        top: 10px;
+
+    }
+    .logo_login .v-image{
+        margin: 6px auto 105px auto;
+    }
+    .mobi_margin_logo{
+        margin-top: 50px !important;
+        margin-bottom: 80px !important;
+    }
+
+    .input_label{
+
+        font-size: 14px;
+        line-height: 18px;
+
+
+    }
+    .sidebar_size{
+        width: 90% !important;
+    }
+
+    .height_list_item{
+        height: 180px;
+        padding-bottom: 10px !important;
+    }
+    .topic_title{
+        font-size: 16px !important;
+        line-height: 21px !important;
+
+
+    }
+    .topic_text{
+        font-size: 14px !important;
+        line-height: 18px !important;
+    }
+    .topic_text_bot{
+        font-size: 14px !important;
+        line-height: 18px !important;
+    }
+
+    .padding_top10_bottom0{
+        padding-top: 10px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .topic_margin_top0{
+      margin-top: 0 !important;
+    }
+
+    .topic_padding_top0{
+        padding-top: 0 !important;
+
+    }
+
+
+
+    .rowMobiClass{
+        background-color: #F5F5F5;
+        margin: 10px 0 10px 0;
+        border-radius: 10px;
+        padding: 15px 0 15px 0 !important;
+    }
+    .rowMobiClass td{
+        border-bottom: 0 !important;
+        min-height: 22px !important;
+        margin-bottom: 15px !important;
+        padding: 0 15px 0 15px !important;
+    }
+    .rowMobiClass td:last-child{
+        margin-bottom: 0 !important;
+    }
+    .rowMobiClass td div{
+        font-size: 14px !important;
+        font-weight: 400;
+        line-height: 18px !important;
+        letter-spacing: 0;
+        color: #B3B3B3;
+    }
+    .rowMobiClass td div:nth-child(2n){
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 21px !important;
+        letter-spacing: 0;
+        color: #333333;
+        width: 60%;
+        text-align: left;
+    }
+    .rowMobiClass td div:nth-child(2n) div{
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 21px !important;
+        letter-spacing: 0;
+        color: #333333;
+        text-align: left;
+    }
+
+    .tableCompanyBorder{
+        padding: 0 18px 0 18px;
+    }
+    .rowMobiCompany td{
+        min-height: 20px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .rowMobiCompany td:nth-child(2n){
+        padding-bottom: 10px !important;
+    }
+    .rowMobiCompany td:nth-child(2n+1){
+        padding-top: 10px !important;
+    }
+    .rowMobiCompany td div:nth-child(1){
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .rowMobiCompany td div:nth-child(2n){
+        width: 100%;
+        text-align: left;
+    }
+
+    .rowMobiCompany td div.company_table_header{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #B3B3B3;
+    }
+
+    .rowMobiCompany td div.col_name, .rowMobiCompany td div.col_category_copy{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #333333;
+
+    }
+
+    .rowNotification{
+        height: auto;
+        min-height: 120px;
+    }
+
+    .notification_title{
+        font-size: 16px !important;
+    }
+    .notification_text{
+        font-size: 14px !important;
+    }
+
+    .notification_header_50{
+        max-width: 50% !important;
+        width: 50% !important;
+    }
+
+    .profile_background{
+        background-color: #F5F5F5;
+        padding: 24px 24px 34px 24px !important;
+    }
+
+    .deal_col_50{
+        width: 50% !important;
+        max-width: 50% !important;
+    }
+
+    .deal_title{
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    .deal_text{
+        font-size: 14px !important;
+        line-height: 18px !important;
+
+    }
+
+    .padding_0_tr_1 tr:nth-child(1){
+        margin-top: 0 !important;
+    }
+
+    .deal_title_section{
+        font-size: 16px !important;
+        line-height: 21px !important;
+    }
+
+    .deal_in_detail{
+        font-size: 14px !important;
+        line-height: 22px !important;
+        padding-top: 6px !important;
+    }
+
+    .deal_in_detail, .text_left{
+        text-align: left;
+    }
+    .close{
+        right: 10px;
+        top: 10px;
+        float: right;
+    }
+    .info_open{
+        position: unset;
+        width: 100%;
+        border: solid 1px #b3b3b3;
+        background-color: #ffffff !important;
+
+    }
+
+
+}
+
